@@ -1,0 +1,29 @@
+Game Design
+
+•	Game rules:
+o	Player throws rocks that beat scissors (breaking scissors).
+o	Player throws scissors that beat paper (cutting paper).
+o	Player throws paper planes that beat rock (wrapping rock).
+o	Rock enemies throw rocks that deal rock damage.
+o	Scissor enemies throw scissors that deal scissor damage.
+o	Paper enemies throw paper planes that deal paper damage.
+o	The minigame is single player and the computer plays the role of many opponent agents, each opponent’s type is chosen at random before it spawns.
+o	The cursor is used to select the attack style (one icon for each attack style is present at the bottom of the screen). 
+o	The cursor is used to attack enemies, one attack can be used at a time (with a 1000ms delay between attacks), the player will continue to attack until switching to a different target.
+o	The defence style must be selected before the ¬¬¬projectile intersects the player, otherwise the previous defence style is used against the attack.
+o	The attack style must be selected before the projectile is fired, otherwise the previous style is assigned to the projectile.
+o	Enemies are highlighted upon hover, and pulse purple once they have been assigned as the current target.
+
+•	Interaction with the player:
+o	The console is used to interact with the player before starting the game.
+o	The left mouse button is used to move the player, but ‘attack clicks’ are instead ‘movement clicks’ if the ‘Shift’ key is held while clicking on/under an enemy.
+o	The player can choose one of the three attack styles (Rock, Paper, Scissors) via icons at the bottom-left of screen.
+o	The player can choose one of the three defence styles (Rock, Paper, Scissors) via icons at the bottom-right of screen.
+o	The player can choose whether to play again after death.
+o	The player should pulse with a red aura if they attack using the wrong style.
+o	The player is shown their score which is saved at the end of the game (Enemies killed count, as well as the number of incorrect attacks made).
+o	Incorrect style attacks cause the enemy to split into two, duplicated enemies (and their descendants) are worth zero kills/points.
+
+•	Validation of user input:
+o	By the end of each round, the player must answer whether they want to play again or not.
+
